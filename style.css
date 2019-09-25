@@ -1,115 +1,194 @@
-*{
-    font-family: Arial, Helvetica, sans-serif
-}
 body{
     margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container {
+/* header start */
+.nav{
     display:flex;
-    flex-wrap:wrap;
-    background-color:blue;
     flex-direction: row;
+    flex-wrap: wrap;
+    background-color: dodgerblue;
+    text-align: center;
     max-width:100vw;
-
 }
-.normal h1{
+.nav h1{
+    flex-grow:1;
+    font-weight:100;
+    max-width:24vw;
+    padding:0.5em 1em;
+    text-align: left;
     margin:0;
-    text-align:left;
+    color:white;
 }
+
 .normal{
     flex-grow: 1;
-    color: white;
-    padding:2em;
-    text-align:center;
-    height:10%;
-}
-h1.users{
-     margin: 1em 1em;
-     padding:0em;  
+    max-width:24vw;
+    padding:2em 0;
+    color:white;
 }
 
-.userbox{
+/* header end */
+/* body start */
+.user-title{
+    width:100vw;
+    padding:1em;
+    margin:0;
+}
+
+.user-container{
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
-    max-width:600px;
-    border: 1px solid black;
-    margin: 0 auto;
-
+    max-width: 100vw;
+    justify-content: center;
 }
-.userflex{
+.user-inner-container{
     flex-grow: 1;
-    color: white;
-    width:600px;
+    max-width:600px;
     padding:1em;
-    text-align:center;
-    height:10%;
-}
-.userflex h1{
-    margin:0;
-    padding:0;
-    color:black;
+    border: 1px solid #aebecc;
+    border-radius:5px;
+    color:grey;
     text-align: left;
 }
-form{
+
+.user-inner-container h1{
+    padding:0 0 0.5em 0;
+    margin:0;
+    text-align: left;
+    
+}
+
+.user-box{
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
-    max-width:100%;
-    margin: 0 auto;
-    padding:1em
-}
-.column{
-    width:100%;
+    max-width: 100vw;
+    justify-content: center;
+    padding:0.5em 0;
 }
 label{
-    width:20%
+    flex-grow:1;
+    max-width:25vw;
 }
 input{
-    width:80%
+    flex-grow:5;
 }
 select{
-    width: 80%;
-}
-button{
-    border-radius:0;
+    flex-grow:7;
 }
 .buttons{
-    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    max-width: 150px;
+    justify-content: center;
 }
-@media( max-width:600px){
-    .container {
-        display:flex;
-        flex-wrap:wrap;
-        background-color:blue;
+.clear{
+    border: 1px solid black;
+    min-width: 60px;
+    font-size: 0.75em;
+    padding:0.45em 0;
+    background-color: white;
+}
+.save{
+    border: 1px solid black;
+    min-width: 60px;
+    font-size: 0.75em;
+    color:white;
+    background-color: dodgerblue;
+    padding:0.45em 0;
+}
+.user-grid{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width:100vw;
+}
+.user-grid-box{
+    flex-grow:1;
+    min-width:23vw;
+    max-width: 27vw;
+    padding:0.75em;
+    margin:1em;
+    text-align: center;
+    border:1px solid #aebecc;
+    border-radius:20px;
+}
+
+
+/* body end */
+
+/* mobile starts */
+@media(max-width:600px){
+    .nav{
         flex-direction: column;
-        max-width:100vw;
-        max-height: 100vh;   
-    
+        text-align: left;
+    }
+    .nav h1{
+        max-width: 100vw;
+        padding: 0.5em 0.5em;
     }
     .normal{
-        padding:1em 2em;
-        width:100vw;
-        text-align:left;
+        max-width: 100vw;
+        padding: 1em 1em 2em;
     }
-    .userbox{
-        display:flex;
-        flex-wrap:wrap;
-        flex-direction: row;
-        max-width:600px;
-        border: 1px solid black;
-        margin: 0 auto;
+    .user-container{
+        max-width: 100vw;
+        padding:0.5em;
     }
-    .form{
-        margin:0;
+    .user-inner-container{
+        max-width: 85vw;
+        margin: 0 0.8em;
     }
+    .user-title {
+        width: 90vw;
+        padding: 0.5em;
+    }
+    .user-box{
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
     label{
-        width:100%
+        flex-grow:1;
+        max-width: 100vw;
+        padding:0.5em 0;
     }
     input{
-        width:100%
+        border:0;
     }
     select{
-        width: 100px;
+        border:0;
+    }
+    .buttons{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+        max-width: 100vw;
+        
+        justify-content: center;
+    }
+    .clear{
+        border:0;
+        max-width:100vw;
+
+    }
+    .save{
+        max-width:100vw;
+        color:white;
+    }
+    .user-grid{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .user-grid-box{
+        max-width: 100vw;
     }
 }
+/* mobile ends */
