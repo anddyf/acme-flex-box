@@ -1,47 +1,103 @@
 <html>
-    <head>
-        <link rel='stylesheet' type="text/css" href="style.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="container">
-            <div class="normal"><h1>Acme Layout</h1></div>
-            <div class="normal"><strong>Users</strong></div>
-            <div class="normal">Department</div>
-            <div class="normal">Contact</div>
+<head>
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!--  Nav Start-->
+    <div class="nav">
+        <h1>Acme Layout</h1>
+        <div class="normal"><strong>Users</strong></div>
+        <div class="normal">Department</div>
+        <div class="normal">Contact</div>
+    </div>
+<!--  Nav End-->
+
+<!--  User title Start-->
+    <h1 class ="user-title">Users</h1>
+<!--  User title End-->
+
+<!--  User Box Start-->
+    <div class="user-container">
+        <div class="user-inner-container">
+
+            <h1>Create A User</h1>
+
+            <form>
+
+                <div class="user-box">
+                    <label>First Name</label>
+                    <input type= "text" placeholder= "Jane"></input>
+                </div>
+
+                <div class="user-box">
+                    <label>Last Name</label>
+                    <input type= "text" placeholder= "Doe"></input>
+                </div>
+
+                <div class="user-box">
+                    <label>Department</label>
+                    <select>
+                        <option>
+                            --none--
+                        </option>
+                    </select>
+                </div>
+                <div class="user-box">
+                    <div class="buttons">
+                        <button class="clear">Clear</button>
+                        <button class="save">Save</button>
+                    </div>
+                </div>
+
+            </form>
         </div>
 
-        <h1 class="users">Users</h1>
-        </div>
-        <div class="userBox">
-            <div class="userflex">
-                   <div class="user-inner-flex"></div> <h1 class="users">Create A User</h1></div>
-                   <form>
+    </div>
+<!--  User Box End-->
 
-                         <label>First Name</label>
-                         <input type="text" placeholder="Jane">
+<!--  User grid-->
+<div class="user-grid">
+
+    <div class="user-grid-box">
+        <h3>User A</h3> 
+        <p>Some text for the users.</p>
+    </div>
+
+    <div class="user-grid-box">
+            <h3>User A</h3> 
+            <p>Some text for the users. Some text for the users. Some text for the users. Some text for the users. Some text for the users. Some text for the users.</p>
+    </div>
+
+    <div class="user-grid-box">
+            <h3>User A</h3> 
+            <p>Some text for the users.</p>
+    </div>
+
+    <div class="user-grid-box">
+            <h3>User A</h3> 
+            <p>Some text for the users.</p>
+    </div>
+
+    <div class="user-grid-box">
+            <h3>User A</h3> 
+            <p>Some text for the users.</p>
+    </div>        
+
+    <div class="user-grid-box">
+            <h3>User A</h3> 
+            <p>Some text for the users.</p>
+    </div>
+
+    <div class="user-grid-box">
+            <h3>User A</h3> 
+            <p>Some text for the users.</p>
+    </div>
+
+</div>
 
 
+</body>
 
-                           <label>Last Name</label>
-                           <input type="text" placeholder="Jane">
-
-                       
-
-
-                        <label>Department</label>
-                        <select placeholder="--None--">
-                            <option>--None--</option>
-                        </select>
-
-
-                        <div class="buttons">
-                       <button>Clear</button>
-                       <button>Save</button>
-                        </div>
-
-                   </form>
-            </div>
-        </div>
-    </body>
 </html>
